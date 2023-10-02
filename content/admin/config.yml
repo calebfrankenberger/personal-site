@@ -9,7 +9,7 @@ editorial_workflow: true
 collections:
   - name: "blog"
     label: "Post"
-    folder: "/content/blog"
+    folder: "blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
