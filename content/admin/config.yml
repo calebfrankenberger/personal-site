@@ -1,18 +1,19 @@
 backend:
   name: git-gateway
   branch: main
+display_url: https://www.calebfrankenberger.com
 media_folder: "public/img"
 public_folder: "/img"
 show_preview_links: true
 editorial_workflow: true
 collections:
-  - name: "post"
+  - name: "blog"
     label: "Post"
     folder: "/content/blog"
     create: true
     slug: "---"
     fields:
-      - { label: "title", name: "title", widget: "string" }
+      - { label: "title", name: "title", widget: "string", required: true }
       - { label: "date", name: "date", widget: "date", format: "YYYY-MM-DD" }
       - {
           label: "updated",
@@ -20,6 +21,7 @@ collections:
           widget: "date",
           format: "YYYY-MM-DD",
           required: false,
+          default: "",
         }
       - { label: "tags", name: "tags", widget: "list" }
       - { label: "body", name: "body", widget: "markdown" }
