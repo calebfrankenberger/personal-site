@@ -12,12 +12,12 @@ collections:
     fields:
       - { label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
       - { label: "title", name: "title", widget: "string", required: true }
-      - { label: "date", name: "date", widget: "datetime", format: "LLLL" }
+      - { label: "date", name: "date", widget: "datetime", format: ""YYYY-MM-DD"" }
       - {
           label: "updated",
           name: "updated",
           widget: "datetime",
-          format: "LLLL",
+          format: ""YYYY-MM-DD"",
           required: false,
           default: "",
         }
