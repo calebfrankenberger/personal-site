@@ -10,6 +10,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "layout", name: "layout", widget: "hidden", default: "layouts/post.html"}
       - { label: "title", name: "title", widget: "string", required: true }
       - { label: "date", name: "date", widget: "date", format: "YYYY-MM-DD" }
       - {
