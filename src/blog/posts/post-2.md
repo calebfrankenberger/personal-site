@@ -5,9 +5,9 @@ description: The greatest project to ever live
 date: 2023-08-31
 author: Caleb Frankenberger
 tags:
-  - Computer Science
-  - Code
-  - Encryption
+  - computer science
+  - code
+  - encryption
 ---
 
 <!-- prettier-ignore -->

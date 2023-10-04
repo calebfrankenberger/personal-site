@@ -7,10 +7,10 @@ pagination:
 layout: layouts/base.html
 permalink: /blog/tag/{{tag | slugify }}/index.html
 eleventyComputed:
-  title: Posts Tagged with "{{ tag }}"
+  title: Posts Tagged with "{{ tag | lower }}"
 ---
 
-<h1>Posts Tagged with {{ tag | lower }}</h1>
+<h1>Posts Tagged with "{{ tag | lower }}"</h1>
 
 {% for post in collections[tag] %}
 <li>
