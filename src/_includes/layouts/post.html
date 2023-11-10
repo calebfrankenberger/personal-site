@@ -8,10 +8,12 @@
 <article class="post__content">
   <h1>{{ title }}</h1>
   <p><time>{{ date }}</time></p>
-  <ul>
+
+  <ul class="tags">
+    <li>Tagged with: </li>
     {% for tag in tags %}
-      <li>
-        <a href="/blog/tag/{{tag | slugify }}">{{ tag }}</a>
+      <li class="tag">
+        <a href="/blog/tag/{{tag | slugify }}">{{ tag }},</a>
       </li>
     {% endfor %}
   </ul>

@@ -10,7 +10,6 @@ tags:
   - encryption
 ---
 
-<!-- prettier-ignore -->
 # LFSR Image Encryption
 
 Small summary here.
