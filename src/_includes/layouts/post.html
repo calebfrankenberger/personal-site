@@ -7,16 +7,17 @@
 {% block content %}
 <article class="post__content">
   <h1>{{ title }}</h1>
-  <p><time>{{ date }}</time></p>
+  <p><time>{{ date | postDate2 }}</time></p>
 
   <ul class="tags">
     <li>Tagged with: </li>
     {% for tag in tags %}
       <li class="tag">
-        <a href="/blog/tag/{{tag | slugify }}">{{ tag }},</a>
+        <a href="/blog/tag/{{tag | slugify }}">[{{ tag }}],</a>
       </li>
     {% endfor %}
   </ul>
   {{ content | safe }} 
 </article>
 {% endblock %}
+ 
