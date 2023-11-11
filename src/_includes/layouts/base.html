@@ -10,12 +10,12 @@
       <ul class="navlist">
         <li><a href="/">Home</a></li>
         <li><a href="/blog/">Posts</a></li>
-        <li><a href="/about/">About Me</a></li>
+        <li><a href="/about/">About<span> Me</span></a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
       
       <div class="toggleContainer">
-        <div class="switch">
+        <div class="switch desktop">
           <button id="theme-button" title="Toggle Theme" >
           <input type="checkbox" class="switch__input" onclick="toggleTheme();" id="Switch">
           <label class="switch__label" for="Switch">
@@ -23,6 +23,14 @@
               <span class="switch__decoration"></span>
           </label>
           </button>
+        </div>
+        <div class="switch mobile" onclick="toggleTheme();">
+            <div id="sun" class="sun-logo">
+               <i class="fas fa-sun"></i>
+            </div>
+            <div id="moon" class="moon-logo">
+               <i class="fas fa-moon"></i>
+         </div>
         </div>
       </div>
     </div>

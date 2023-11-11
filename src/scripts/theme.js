@@ -2,6 +2,8 @@
 // https://github.com/TehBrian/tehbrian.github.io/blob/main/assets/js/theme.js
 
 const themeSwitch = document.getElementById("Switch");
+const mobileSun = document.getElementById("sun");
+const mobileMoon = document.getElementById("moon");
 
 
 function onLoad() {
@@ -27,11 +29,21 @@ function activateTheme(theme) {
 function activateDarkTheme() {
     activateTheme("dark");
     themeSwitch.checked = false;
+    mobileSun.classList.remove("active");
+    mobileSun.classList.add("inactive");
+    
+    mobileMoon.classList.remove("inactive");
+    mobileMoon.classList.add("active");
 }
 
 function activateLightTheme() {
     activateTheme("light");
     themeSwitch.checked = true;
+    mobileMoon.classList.remove("active");
+    mobileMoon.classList.add("inactive");
+    
+    mobileSun.classList.remove("inactive");
+    mobileSun.classList.add("active");
 }
 
 function activateColorScheme() {
