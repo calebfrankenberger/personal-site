@@ -7,15 +7,33 @@
   <header class="global_header">
     <div class="container">
       <a class="name" href="/">Caleb Frankenberger</a>
-      <ul>
+      <ul class="navlist">
         <li><a href="/">Home</a></li>
         <li><a href="/blog/">Posts</a></li>
         <li><a href="/about/">About Me</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
+      
+      <div class="toggleContainer">
+        <div class="switch">
+          <button id="theme-button" title="Toggle Theme" >
+          <input type="checkbox" class="switch__input" onclick="toggleTheme();" id="Switch">
+          <label class="switch__label" for="Switch">
+              <span class="switch__indicator"></span>
+              <span class="switch__decoration"></span>
+          </label>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
   <body>
     {% block content %} {{content | safe }} {% endblock %}
   </body>
+
+  <footer>
+  </footer>
 </html>
+
+<script src="/scripts/theme.js"></script>
+ 
