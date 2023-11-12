@@ -1,0 +1,12 @@
+#blogPosts {
+    font-size: 1.3rem;
+   list-style: none;
+}
+
+.postTitle {
+    font-weight: 600;
+}
+
+.postDate {
+    font-weight: 300;
+}
