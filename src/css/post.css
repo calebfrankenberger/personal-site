@@ -37,6 +37,7 @@ img {
   text-align: left;
   margin: 0 auto;
   max-width: 960px;
+  width: 90%;
 }
 
 .post__body h1 {
