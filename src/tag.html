@@ -4,18 +4,21 @@ pagination:
   size: 1
   alias: tag
   addAllPagesToCollection: true
-layout: layouts/tagged.html
+layout: layouts/base.html
 permalink: /blog/tag/{{tag | slugify }}/index.html
 eleventyComputed:
   title: Posts Tagged with "{{ tag | lower }}"
 ---
 
-<div class="tagged__content">
-<h1>Posts Tagged with "{{ tag | lower }}"</h1>
+<div class="taggedWithContent">
+  <h1>Posts Tagged with "{{ tag | lower }}"</h1>
 
-{% for post in collections[tag] %}
-<li class="tagged__posts">
-    <a href="{{post.url}}"><span class="tagged__title">{{post.data.title}}</span> - <span class="tagged__date">{{post.data.date | postDate }}</span></a>
-</li>
-{% endfor %} 
+  {% for post in collections[tag] %}
+  <li class="taggedWithPosts">
+    <a href="{{post.url}}"
+      ><span class="taggedWithTitle">{{post.data.title}}</span> -
+      <span class="taggedWithDate">{{post.data.date | postDate }}</span></a
+    >
+  </li>
+  {% endfor %}
 </div>

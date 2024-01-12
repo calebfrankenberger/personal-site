@@ -1,15 +1,20 @@
 ---
-layout: layouts/blog.html
+layout: layouts/base.html
 title: Blog
 ---
 
 <div class="content_container">
   <div class="content">
-    <h1>Blog</h1>
+    <h1>Posts</h1>
 
     <ul id="blogPosts">
       {% for post in collections.posts %}
-      <li><a href="{{post.url}}"><span class="postTitle">{{post.data.title}}</span> - <span class="postDate">{{ post.data.date | postDate2 }}</span></a></li>
+      <li>
+        <a href="{{post.url}}"
+          ><span class="postTitle">{{post.data.title}}</span> -
+          <span class="postDate">{{ post.data.date | postDate2 }}</span></a
+        >
+      </li>
       {% endfor %}
     </ul>
   </div>
