@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coffee Table Build</title>
+<meta name="description" content="" />
+<link rel="stylesheet" href="/css/global.css" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://kit.fontawesome.com/f14e7825a0.js" crossorigin="anonymous"></script>
+
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>  
+  </head>
+
+  <header>
+    <div class="headerContent">
+      <a class="name" href="/">Caleb Frankenberger</a>
+      <ul class="navlist">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Posts</a></li>
+        <li>
+            <button class="themeToggleButton" title="Toggle Theme">
+              <input
+                type="checkbox"
+                class="themeToggleInput"
+                onclick="toggleTheme();"
+                id="themeToggleCheckbox"
+              />
+              <label class="themeToggleLabel hover" for="themeToggleCheckbox">Theme</label>
+            </button>
+        </li>
+      </ul>
+
+      
+      </div>
+    </div>
+  </header>
+  <body>
+    
+<article class="postContent">
+  <h1 id="title">Coffee Table Build</h1>
+  <p><time>January 18, 2023</time></p>
+
+  <ul class="tags">
+    <li>Tagged with:</li>
+    
+    <li class="tag">
+      <a href="/blog/tag/woodworking">[woodworking],</a>
+    </li>
+    
+  </ul>
+  <div class="postBody"><h1>Intro</h1>
+<p>Here's the build log for a coffee table I made back in January for my Mom's birthday. I don't have much to comment here, so I'll just throw up the photos.</p>
+<h1>Build</h1>
+<p>We started with some live edge oak and some old oak that had been milled from Megan's uncle's yard.</p>
+<p>After picking out three good pieces of oak, we joined and planed them. Then we did the same with a couple pieces of walnut, and tested a few configurations of layouts before landing on this.</p>
+<p>Obviously the huge crack down the middle of the main oak slab would be unstable. Here are cutouts for bowties, which will be made out of walnut to match the two walnut boards.</p>
+<p>After gluing in the bowties and letting them dry, we poured in resin to stabilize the rest of the crack and fill any gaps left in the slab.</p>
+<p>After the resin dried, it got sanded flush. The side boards were then all joined with biscuit joints and glue.</p>
+<p>The frame is very simple, and just uses a couple pocket screws and a little wood glue.</p>
+<p>After assembling the frame and throwing the top on, it looks pretty good!</p>
+<h1>Finished Product</h1>
+<p>Since the coffee table will have lots of drinks, food, laundry, books, candles, etc on it I decided to finish it with polyurethane. I did three coats of it and let it dry for about a week.</p>
+</div>
+</article>
+
+  </body>
+
+  <footer>
+   <div class="footerContent">
+      <p>Caleb Frankenberger</p>
+      <p>mail@calebfrankenberger.com</p>
+   </div>
+  </footer>
+</html>
+
+<script src="/scripts/theme.js"></script>
